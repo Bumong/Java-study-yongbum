@@ -10,7 +10,7 @@ public class Array6 {
          }
 
          int[] b = a;
-         
+
 
          System.out.println("[배열 b]");
 
