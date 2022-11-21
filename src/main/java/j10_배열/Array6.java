@@ -6,7 +6,6 @@ public class Array6 {
          System.out.println("[배열 a]");
          for (int i = 0; i < a.length; i++) {
              System.out.print(a[i] + (i != a.length - 1 ? ", " : "\n"));
-
          }
 
          int[] b = a;

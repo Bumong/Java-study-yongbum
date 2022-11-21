@@ -37,23 +37,6 @@ public class Array5 {
         /*
         배열들 중 동일 인덱스에 위치한 값들 중 최소값들만 뽑아서 새로운 배열을 만든다.
          */
-//        int a = 10;
-//        int b = 5;
-//        int c = 7;
-//
-//        int min = 0;
-//
-//        if(a<b){
-//            min = a;
-//        }else {
-//            min = b;
-//        }
-//
-//        if(c < min){
-//            min = c;
-//        }
-//
-//        System.out.println("min : " + min);
 
 
     }
