@@ -8,13 +8,14 @@ public class AnimalMain {
 
         Animal hAnimal = human; // 업캐스팅
         Animal tAnimal = tiger;
+
         Animal[] animals = new Animal[3];
-
-
 
         animals[0] = new Human();
         animals[1] = new Tiger();
         animals[2] = new Animal();
+
+
 
         System.out.println();
 
@@ -33,7 +34,6 @@ public class AnimalMain {
                 t.hunting();
             }else System.out.println("다운캐스팅 불가");
         }
-
 
 
 
