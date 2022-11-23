@@ -15,6 +15,7 @@ public class EntityMain {
         System.out.println(entity.getAddress());
 
         System.out.println(Entity.class);
+        System.out.println(entity.getClass());
         Class c = Entity.class;
 
         Object obj = new Student(20220001, "권용범");

@@ -11,10 +11,10 @@ public class StudentMain {
     public static void print(Object obj){
         System.out.println(obj);
     }
+
     public static void main(String[] args) {
         Student student = new Student(20220001, "권용범");
         Student student2 = new Student(20220001, "권용범");
-
 
         System.out.println(student);
         System.out.println(student2);
@@ -26,7 +26,9 @@ public class StudentMain {
 
         print (student);
 
+        System.out.println(student == student2);
         System.out.println(student.hashCode() == student2.hashCode());
+        System.out.println(student.hashCode());
         System.out.println(student2.hashCode());
 
         System.out.println();
