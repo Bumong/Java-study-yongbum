@@ -12,3 +12,4 @@ public class Human extends Animal{
         System.out.println("사람이 움직인다");
     }
 }
+

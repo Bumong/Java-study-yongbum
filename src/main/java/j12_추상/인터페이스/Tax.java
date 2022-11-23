@@ -4,6 +4,9 @@ package j12_추상.인터페이스;
  */
 
 public class Tax implements Calculator{
+
+
+
     @Override
     public int calc(int[] values) {
         System.out.println("연말정산을 진행합니다.");
