@@ -10,8 +10,5 @@ public class ScannerMain {
 
         s1.inputName();
         s2.inputAge();
-
-
-
     }
 }
