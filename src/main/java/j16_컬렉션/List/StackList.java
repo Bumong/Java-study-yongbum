@@ -31,7 +31,7 @@ public class StackList {
         }
 
         System.out.println();
-
+//
         ArrayList<String> stack2 = new ArrayList<String>();
 
         stack2.add("임지현");
@@ -42,19 +42,19 @@ public class StackList {
         stack2.add("박수현");
         stack2.add("황석민");
         stack2.add("박준현");
-//
-//        int size = stack2.size();
-//
-//        for(int i = 0; i < size; i++) {
-//            System.out.println(stack2.remove(size - i - 1));
-//        }
-//
-        ArrayList<String> copyList = new ArrayList<String>();
+
         int size = stack2.size();
 
         for(int i = 0; i < size; i++) {
-            copyList.add(0, stack2.remove(size - i - 1));
+            System.out.println(stack2.remove(size - i - 1));
         }
+
+//        ArrayList<String> copyList = new ArrayList<String>();
+//        int size = stack2.size();
+//
+//        for(int i = 0; i < size; i++) {
+//            copyList.add(0, stack2.remove(size - i - 1));
+//        }
     }
 
 

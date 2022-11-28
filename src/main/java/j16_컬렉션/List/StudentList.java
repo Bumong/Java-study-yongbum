@@ -44,24 +44,39 @@ public class StudentList {
         //0번 인덱스 학생의 이름을 다음 인덱스의 학생 이름으로 변경
         //제일 마지막 인덱스의 학생 이름으로 0번 인덱스로 이동
 
-        String lastName = null;
-        for(int i = 0; i < students.size(); i++) {
-            int nowIndex = students.size() - 1 - i;
-            int preIndex = nowIndex - 1;
-            Student s = students.get(nowIndex);
+//        String lastName = null;
+//        for(int i = 0; i < students.size(); i++) {
+//            int nowIndex = students.size() - 1 - i;
+//            int preIndex = nowIndex - 1;
+//            Student s = students.get(nowIndex);
+//
+//            if(nowIndex == 0) {
+//                s.setName(lastName);
+//                break;
+//            }
+//
+//            if(nowIndex == students.size() - 1){
+//                lastName = s.getName();
+//            }
+//            s.setName(students.get(preIndex).getName());
+//        }
 
-            if(nowIndex == 0) {
+        String lastName = students.get(students.size() - 1).getName();
+
+        for (int i = 0; i < students.size(); i++){
+
+            Student s = students.get(students.size() - 1 - i); // 4, 3, 2, 1, 0
+
+            if(s == students.get(0)){
                 s.setName(lastName);
                 break;
             }
 
-            if(nowIndex == students.size() - 1){
-                lastName = s.getName();
-            }
-            s.setName(students.get(preIndex).getName());
+            s.setName(students.get(students.size() - 2 - i).getName()); //3, 2, 1, 0
         }
-
-        System.out.println(students);
+        for (int i = 0; i < students.size(); i++){
+            System.out.println(students.get(i));
+        }
 
     }
 }
