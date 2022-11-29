@@ -1,10 +1,12 @@
 package j16_컬렉션.List;
 
 import java.util.ArrayList;
+
 import java.util.Arrays;
 import java.util.List;
 
 public class StudentList2 {
+	
     public static void main(String[] args) {
 
 //        List<String> nameList = Arrays.asList(new String[]{
@@ -44,7 +46,7 @@ public class StudentList2 {
                 .age(23)
                 .hobbyList(Arrays.asList(new Hobby[]{hl.get(0), hl.get(3)}))
                 .build();
-
+ 
         System.out.println(s1);
 
         List<Student> sl = new ArrayList<Student>();
@@ -56,12 +58,13 @@ public class StudentList2 {
         for (Student s : sl){
             System.out.println("<학생정보>");
             System.out.println(s);
-            System.out.println("<" + s.getName() + "학생취미>");
+            System.out.println("<" + s.getName() + " 학생취미>");
             for(Hobby h : s.getHobbyList()){
                 System.out.println(h);
             }
             System.out.println();
         }
+        
 
 
 

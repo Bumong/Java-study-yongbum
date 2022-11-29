@@ -1,3 +1,5 @@
+package j02_변수;
+
 public class variable2 {
     public static void main(String[] args) {
         boolean checkFlag = false;
