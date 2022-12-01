@@ -16,7 +16,7 @@ public class UserRepository {
 	
 	//Creat
 	public void register(Map<String, Object> userMap) {
-		System.out.println("[사용자 등록");
+		System.out.println("[사용자 등록]");
 		userList.add(userMap);
 		}
 	
@@ -26,7 +26,7 @@ public class UserRepository {
 		
 		for(Map<String, Object> user : userList) {
 			String _username = (String) user.get("username");
-			if(_username.equals(userMap)) {
+			if(_username.equals(username)) {
 				userMap = user;
 				break;
 			}

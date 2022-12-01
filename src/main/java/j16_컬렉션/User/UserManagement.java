@@ -12,7 +12,7 @@ public class UserManagement {
 		
 		UserRepository userRepository = new UserRepository(userList);
 		
-		Map<String, Object> user1 = new UserRepository(userList);
+//		Map<String, Object> user1 = new UserRepository(userList);
 		
 		Map<String, Object> user1 = new HashMap<>();
 		user1.put("username", "a1");
@@ -46,8 +46,6 @@ public class UserManagement {
 		userRepository.deleteUserByUsername("b1");
 		System.out.println(userRepository.getUserList());
 		
-		userRepository.deleteUserByUsername("b1");
-		System.out.println(userRepository.getUserList());
 	}
 
 }
