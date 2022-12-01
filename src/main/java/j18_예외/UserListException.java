@@ -34,17 +34,18 @@ public class UserListException {
 				System.out.println("username: " + userList.get(i).getUsername());
 				System.out.println("password: " + userList.get(i).getPassword());
 			}
+
 		}catch(IndexOutOfBoundsException indexOutOfBoundsException) {
 			length -= 1;
 			System.out.println(indexOutOfBoundsException.getMessage());
-			try {
-				for(int i = 0; i < length; i++) {                                                                                  
-					System.out.println("username: " + userList.get(i).getUsername());
-					System.out.println("password: " + userList.get(i).getPassword());
-				}
-			}catch(NullPointerException nullPointerException) {
-				System.out.println(nullPointerException.getMessage());
-			}
+//			try {
+//				for(int i = 0; i < length; i++) {
+//					System.out.println("username: " + userList.get(i).getUsername());
+//					System.out.println("password: " + userList.get(i).getPassword());
+//				}
+//			}catch(NullPointerException nullPointerException) {
+//				System.out.println(nullPointerException.getMessage());
+//			}
 			                                                                                                                                             
 		} catch(NullPointerException nullPointerException) {
 			System.out.println(nullPointerException.getMessage());

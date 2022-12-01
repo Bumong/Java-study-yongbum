@@ -14,7 +14,7 @@ public class ArrayyException {
 			System.out.println(e);
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-			System.out.println("예외가 생성됨");
+//			System.out.println("예외가 생성됨");
 		}
 		
 	
